@@ -1,23 +1,23 @@
 from random import choice
 
-a = '0123456789'
-x = choice(a[1:10])
-s = 0
+num = '0123456789'
+x = choice(num[1:10]) # первый символ не включаю, чтобы он не начинался с нуля
+step = 0
 for n in range(3):
-    z = ''.join(a.split(x[n]))
-    x += choice(z)
+    num = ''.join(num.split(x[n]))
+    x += choice(num)
 print('Загаданное число - ', x)
 while True:
     y = input('Введите 4-х значное число: ')
-    b = 0
-    c = 0
-    s += 1
+    bulls = 0
+    cows = 0
+    step += 1
     for n in range(4):
         if x[n] == y[n]:
-            b += 1
+            bulls += 1
         elif y[n] in x:
-            c += 1
-    print(y + ' содержит ' + str(b) + ' быка и ' + str(c) + ' коров')
-    if b == 4:  # Если число угадано
-        print('Вы победили за '+ str(s) + ' ходов')  # Победа
+            cows += 1
+    print(y + ' содержит ' + str(bulls) + ' быка и ' + str(cows) + ' коров')
+    if bulls == 4:  # Если число угадано
+        print('Вы победили за '+ str(step) + ' ходов')  # Победа
         break
