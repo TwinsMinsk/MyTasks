@@ -7,7 +7,7 @@ for i in message:
     if i in result:
         count += 1
     elif count == 1:
-        print(i,end='')
+        print(i, end='')
     else:
         print(i, end='')
         print(count, end='')

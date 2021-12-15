@@ -2,7 +2,7 @@ import string
 from random import choice
 
 num = '0123456789'
-x = choice(num[1:10]) # первый символ не включаю, чтобы он не начинался с нуля
+x = choice(num[1:10])#первый символ не включаю, чтобы он не начинался с нуля
 step = 0
 for n in range(3):
     num = ''.join(num.split(x[n]))
@@ -27,6 +27,3 @@ while True:
     else:
         print("Число введено неверно, попробуйте еще раз...")
         continue
-
-
-
