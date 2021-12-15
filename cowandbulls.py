@@ -1,4 +1,3 @@
-import string
 from random import choice
 
 num = '0123456789'
