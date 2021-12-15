@@ -21,8 +21,8 @@ while True:
             elif y[n] in x:
                 cows += 1
         print(f'{y} содержит {bulls} быка и {cows} коров')
-        if bulls == 4:  # Если число угадано
-            print(f'Вы победили за {step} ходов')  # Победа
+        if bulls == 4:#Если число угадано
+            print(f'Вы победили за {step} ходов')#Победа
             break
     else:
         print("Число введено неверно, попробуйте еще раз...")
