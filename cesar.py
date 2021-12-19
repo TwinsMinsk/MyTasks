@@ -20,9 +20,7 @@ else:
             result += alpha_eu[new_place]
         else:
             result += i
-print (result.title())
-
-
+print(result.title())
 
 
 alpha_eu = 'ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -47,4 +45,4 @@ else:
             result += alpha_eu[new_place]
         else:
             result += i
-print (result.title())
+print(result.title())
